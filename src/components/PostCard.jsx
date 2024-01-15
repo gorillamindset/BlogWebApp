@@ -1,4 +1,3 @@
-import { forwardRef } from "react";
 import appwriteService from "../appwrite/config";
 import { Link } from "react-router-dom";
 
@@ -19,4 +18,4 @@ function PostCard({ $id, title, featuredImage }) {
   );
 }
 
-export default forwardRef(PostCard);
+export default PostCard;

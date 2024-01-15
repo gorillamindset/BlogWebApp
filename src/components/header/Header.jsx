@@ -1,15 +1,12 @@
-import React, { useEffect } from "react";
-import { login, logout } from "../../store/authSlice";
-import { useSelector, useDispatch } from "react-redux";
-import { Logo, Container } from "../index.js";
+import React from "react";
+import { useSelector } from "react-redux";
+import { LogoutBtn, Logo, Container } from "../index.js";
 import { Link, useNavigate } from "react-router-dom";
-import LogoutBtn from "./LogoutBtn.jsx";
 
 function Header() {
-  const authStatus = useSelector((state) => state.status);
+  const authStatus = useSelector((state) => state.auth.status);
 
   const navigate = useNavigate();
-  const [loginStatus, setLoginStatus] = useState();
 
   const navItems = [
     {

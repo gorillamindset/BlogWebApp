@@ -13,7 +13,9 @@ function Login() {
   const [error, setError] = useState("");
 
   const login = async (data) => {
+    console.log(`abhishek: ${error.message}`);
     setError("");
+
     try {
       const session = await authService.login(data);
       if (session) {
@@ -51,7 +53,7 @@ function Login() {
           </Link>
         </p>
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
-        <form onSubmit={handleSubmit(login())}>
+        <form onSubmit={handleSubmit(login)}>
           <div className="space-y-5">
             <Input
               label="Email:"
