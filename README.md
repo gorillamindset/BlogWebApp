@@ -1,6 +1,6 @@
 # [BlogVerse] 
 
-# BlogWebApp with BAAS
+# EasyBlogHub with BAAS
 
 ## About
 Welcome to [BlogVerse] - Your Cozy Blogging Corner! This is a web app designed for simple and snug blogging experiences. Share your thoughts accompanied by your favorite pictures in a hassle-free environment.
